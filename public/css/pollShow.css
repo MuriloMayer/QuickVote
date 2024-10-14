@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .poll-container {
   margin: 8vh 4vh 0 4vh;
 }
@@ -19,7 +15,45 @@ body {
 .poll-container input::placeholder {
   color: #000;
 }
-.poll-container .remove-option-btn {
+.poll-container .form-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 20vh 0;
+}
+.poll-container .form-top .title {
+  display: flex;
+}
+.poll-container .form-top .dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+.poll-container .form-top .dates input {
+  pointer-events: none;
+  margin: 0 2vh 0 2vh;
+}
+.poll-container .options-container {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 15px;
+  margin: 0 10vh 6vh 10vh;
+}
+.poll-container .options-container input {
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 0.5vh;
+  outline: none;
+  background: none;
+  font-size: 2.5vh;
+}
+.poll-container .options-container input::-moz-placeholder {
+  color: #000;
+}
+.poll-container .options-container input::placeholder {
+  color: #000;
+}
+.poll-container .votes {
   display: inline-block;
   background-color: #ffffff;
   color: #000000;
@@ -32,80 +66,6 @@ body {
   cursor: pointer;
   margin: 20px 0;
 }
-.poll-container .form-top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0 0 20vh 0;
-}
-.poll-container .form-top .title {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0 0 0 10vh;
-}
-.poll-container .form-top .dates {
-  display: flex;
-  flex-wrap: wrap;
-}
-.poll-container .form-top .dates input {
-  margin: 0 10vh 0 0.5vh;
-}
-.poll-container .form-top .dates .date {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  font-size: 2vh;
-}
-.poll-container .form-top .dates .date .error {
-  font-size: 1.5vh;
-}
-.poll-container .options-container {
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  gap: 15px;
-  margin: 0 10vh 6vh 10vh;
-}
-.poll-container .options-container .input-field {
-  width: 100%;
-}
-.poll-container .options-container input {
-  margin: 0 0 10vh 0;
-  width: 90%;
-}
-.poll-container .add-option {
-  position: fixed;
-  right: 4vh;
-  bottom: 5vh;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 5vh;
-  height: 5vh;
-  font-size: 4vh;
-  text-align: center;
-  cursor: pointer;
-}
-.poll-container .submit-btn {
-  position: fixed;
-  bottom: 5.5vh;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid black;
-  cursor: pointer;
-  font-size: 2vh;
-}
-.poll-container .option-error {
-  position: fixed;
-  bottom: 7.5vh;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
 @media (max-width: 1180px) {
   .poll-container input {
     font-size: 2.5vh;
@@ -117,9 +77,6 @@ body {
     justify-content: center;
     margin: 0 auto 4vh auto;
   }
-  .poll-container .form-top .title {
-    margin: 0 0 2vh 0;
-  }
   .poll-container .form-top .title input {
     width: 70vw;
   }
@@ -129,11 +86,6 @@ body {
   .poll-container .form-top .dates input {
     margin: 0 0 3.5vh 0;
     width: 70vw;
-  }
-  .poll-container .form-top .dates .date {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   .poll-container .options-container {
     display: flex;

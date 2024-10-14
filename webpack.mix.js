@@ -12,7 +12,15 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/scss/app.scss', 'public/css')
+    .js('resources/js/pollView.js', 'public/js')
+    .js('resources/js/pollNew.js', 'public/js')
+    .postCss('resources/scss/pagination.css', 'public/css', [
+        require('tailwindcss'),
+    ])
+    .sass('resources/scss/app.css', 'public/css')
     .sass('resources/scss/home.scss', 'public/css')
     .sass('resources/scss/pollNew.scss', 'public/css')
+    .sass('resources/scss/pollView.scss', 'public/css')
+    .sass('resources/scss/user.scss', 'public/css')
+    .sass('resources/scss/userLogin.scss', 'public/css')
     .version();

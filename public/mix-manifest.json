@@ -1,6 +1,12 @@
 {
-    "/js/app.js": "/js/app.js?id=f47ce0ac473559d0ed9a74eabc530eff",
-    "/css/app.css": "/css/app.css?id=b5fbfd547acae004214f724b254ee006",
-    "/css/pollNew.css": "/css/pollNew.css?id=7d4408e0da98275ea6fc12443429a47d",
-    "/css/home.css": "/css/home.css?id=d977cb96fdd683c62373cac0fd3d118b"
+    "/js/app.js": "/js/app.js?id=ff52480a80be8adfcfe3cd2afa883436",
+    "/js/pollView.js": "/js/pollView.js?id=f9a48a3620c2829c9cdf1450ff600eb2",
+    "/js/pollNew.js": "/js/pollNew.js?id=7d164e7e676eede4e5c11f40ae2afb44",
+    "/css/app.css": "/css/app.css?id=74eb8d420454e93e339e821848d8a752",
+    "/css/userRegister.css": "/css/userRegister.css?id=881e3f3f974e4f6cdc9628fe5e549caf",
+    "/css/pollView.css": "/css/pollView.css?id=012c739cf565d91adfe0a731a92812a2",
+    "/css/pollNew.css": "/css/pollNew.css?id=9cf4ae6c884f1083408c5f6f855c0c20",
+    "/css/home.css": "/css/home.css?id=96ce54ea9b1a4baf83836c8c0307b9cc",
+    "/css/pagination.css": "/css/pagination.css?id=55b749987e69552224e37d97f32849d8",
+    "/css/userLogin.css": "/css/userLogin.css?id=68b329da9893e34099c7d8ad5cb9c940"
 }

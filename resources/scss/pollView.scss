@@ -15,22 +15,9 @@ body {
 
         &::placeholder {
             color: #000;
-
         }
-    }
 
-    .remove-option-btn {
-        display: inline-block;
-        background-color: #ffffff;
-        color: #000000;
-        border: 1px solid black;
-        border-radius: 50%;
-        width: 3vh;
-        height: 3vh;
-        font-size: 2vh;
-        text-align: center;
-        cursor: pointer;
-        margin: 20px 0;
+
     }
 
     .form-top {
@@ -40,11 +27,9 @@ body {
         align-items: center;
         margin: 0 0 20vh 0;
 
+
         .title {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            margin: 0 0 0 10vh;
         }
 
         .dates {
@@ -52,18 +37,11 @@ body {
             flex-wrap: wrap;
 
             input {
-                margin: 0 10vh 0 0.5vh;
-            }
+                pointer-events: none;
 
-            .date {
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                font-size: 2vh;
+                margin: 0 2vh 0 2vh;
 
-                .error {
-                    font-size: 1.5vh;
-                }
+
             }
         }
     }
@@ -75,53 +53,51 @@ body {
 
         margin: 0 10vh 6vh 10vh;
 
-        .input-field {
-            width: 100%;
+        input {
+            border: 2px solid #000;
+            border-radius: 50px;
+            padding: 0.5vh;
+            width: 85%;
+            outline: none;
+            background: none;
+            font-size: 2.5vh;
+
+            &::placeholder {
+                color: #000;
+
+            }
+
         }
+
+
+    }
+
+    .input-field {
+        display: flex;
+        align-items: center;
+
+        margin: 0 0 3.5vh 0;
 
         input {
-            margin: 0 0 10vh 0;
-            width: 90%;
+            margin: 0 1vh 0 0;
         }
-
     }
 
-    .add-option {
-        position: fixed;
-        right: 4vh;
-        bottom: 5vh;
-        background-color: #000;
-        color: #fff;
-        border: none;
+    .votes {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid black;
         border-radius: 50%;
-        width: 5vh;
-        height: 5vh;
-        font-size: 4vh;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .submit-btn {
-        position: fixed;
-        bottom: 5.5vh;
-        left: 50%;
-        transform: translateX(-50%);
-
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid black;
-        cursor: pointer;
+        width: 3.5vh;
+        height: 3.5vh;
         font-size: 2vh;
-    }
-
-    .option-error {
-        position: fixed;
-        bottom: 7.5vh;
-        left: 50%;
-        transform: translateX(-50%);
-
+        line-height: 35px;
         text-align: center;
+        cursor: pointer;
+
     }
+
 
     @media (max-width: 1180px) {
         input {
@@ -129,15 +105,12 @@ body {
             width: 70vw;
             margin: 0 auto 3.5vh auto;
         }
-
         .form-top {
             display: flex;
             justify-content: center;
             margin: 0 auto 4vh auto;;
 
             .title {
-                margin: 0 0 2vh 0;
-
                 input {
                     width: 70vw;
                 }
@@ -149,12 +122,6 @@ body {
                 input {
                     margin: 0 0 3.5vh 0;
                     width: 70vw;
-                }
-
-                .date {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
                 }
             }
         }
@@ -171,8 +138,10 @@ body {
 
                 input {
                     width: 60vw;
+
                 }
             }
         }
     }
+
 }

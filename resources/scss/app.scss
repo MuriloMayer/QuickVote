@@ -5,6 +5,7 @@ body {
     font-family: "Poppins", sans-serif;
 
 }
+
 nav {
     display: flex;
     flex-direction: row;
@@ -19,12 +20,13 @@ nav {
         font-weight: normal;
 
     }
+
     .button {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 1vh 2vh 0 0;
+
         a {
             font-size: 2.5vh;
             margin: 1vh 2.5vh 0 0;
@@ -34,21 +36,24 @@ nav {
     }
 
 }
+
 @media (max-width: 1180px) {
     nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0;
+
         h1 {
             margin: 1vh 0 1vh 0;
         }
+
         .button {
             flex-direction: column-reverse;
 
-                a {
-                    margin: 1vh 0 1vh 0;
-                }
+            a {
+                margin: 1vh 0 1vh 0;
+            }
         }
     }
 }

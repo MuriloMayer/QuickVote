@@ -2,22 +2,19 @@
 
 namespace Database\Seeders;
 
+use App\Models\PollOption;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class PollOptionSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call([
-            UserSeeder::class,
-            PollSeeder::class,
-            PollOptionSeeder::class,
-        ]);
+        PollOption::factory(24)->create();
     }
 }
