@@ -1,6 +1,5 @@
 # QuickVote
 
-![QuickVote Logo](https://via.placeholder.com/150)  
 *Um sistema de votação completo, desenvolvido 100% em PHP com Laravel, HTML e SCSS.*
 
 ## 📋 Sobre o Projeto
